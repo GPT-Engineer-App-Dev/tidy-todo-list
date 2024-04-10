@@ -27,7 +27,7 @@ const Index = () => {
     <Box maxW="md" mx="auto" mt={8}>
       <Flex mb={4}>
         <Input placeholder="Add a new task" value={newTask} onChange={(e) => setNewTask(e.target.value)} mr={2} />
-        <IconButton aria-label="Add task" icon={<FaPlus />} onClick={handleAddTask} />
+        <IconButton aria-label="Add task" icon={<FaPlus />} onClick={handleAddTask} colorScheme="green" />
       </Flex>
       {tasks.map((task, index) => (
         <Flex key={index} mb={2} alignItems="center">
